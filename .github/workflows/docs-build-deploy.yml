@@ -34,7 +34,8 @@ jobs:
     # Upload artifact to pages
     - name: Upload docs
       uses: actions/upload-pages-artifact@v3
-      path: build/html
+      with:
+        path: 'build/html'
 
   deploy:
     needs: build
